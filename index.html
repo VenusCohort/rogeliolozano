@@ -1,13 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/597cdfae9f.js" crossorigin="anonymous"></script>
 </head>
-<body class="background-1">
-	<div onmousedown="change()"></div>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/roger-logo2.png" alt="logo" class="roger-logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Welcome, I'm <span>Rogelio</span><br>Lozano from San Antonio</h1>
+            </div>
+        </div>
+    </div>
+<!--About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-roger.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-p">Software Developer and former educator specialized in team building, enhancing social experiences, and optimizing performance. Proficient in crafting front-end websites and applications with an emphasis on React JS, Bootstrap, and Tailwind. Experienced with back-end applications using Java, Spring, and mySQL.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Designing Web/App Visual Interfaces</li>
+                            <li><span>Back-End Development</span><br>Work With Java Back-End Technologies</li>
+                            <li><span>RESTful API</span><br>Integrate multiple APIs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>CodeUp Full Stack Web Development</li>
+                            <li><span>2021 - 2022</span><br>Colt Steele Web Development Bootcamp </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>CodeUp Full Stack Web Development</li>
+                            <li><span>2015 - 2019</span><br>University of Texas at San Antonio</li>
+                            <li><span>2018</span><br>San Antonio College</li>
+                            <li><span>2018</span><br>Northwest Vista College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Services Section-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Skills: HTML | CSS | Bootstrap | JavaScript | React.js | Tailwind |</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Back-End Development</h2>
+                    <p>Skills: Java SE | Java EE (Servlets, JSP) | Spring | Thymeleaf | MySQL | Object-Oriented Programming | Test-Driven Development | Version Control with Git | Paired Programming</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>In progress as I attempt to familiarize with IOS/Android technologies</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Portfolio Section Jackpot-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/i-plant.png" alt="project">
+                    <div class="layer">
+                        <h3>i-Plant</h3>
+                        <p>A dynamic E-commerce website focused on plants that provides a unique feature, Plant-ID, which lets users upload any plant image and outputs informative results relating to the plant.</p>
+                        <a href="https://github.com/i-Plant/iPlant"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/card-game.png" alt="project">
+                    <div class="layer">
+                        <h3>NFL Memory Game</h3>
+                        <p>Developed a fun card game that helps improve concentration and memory. Utilized React components, props, and hooks to enforce game rules. CSS was used to create more animated card flipping sequences.</p>
+                        <a href="https://github.com/LozanoRogelio/NFL-Card-Game"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.png" alt="project">
+                    <div class="layer">
+                        <h3>Map & Weather Project</h3>
+                        <p>Combined the functionality of Mapbox and OpenWeatherApp API to create a dynamic app capable of displaying a 5-Day forecast with detailed weather information in any given global location using Vanilla Javascript.
+                        </p>
+                        <a href="https://github.com/LozanoRogelio/codeup-web-exercises/blob/main/weather_map.html"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/smart-cinema.png" alt="project">
+                    <div class="layer">
+                        <h3>Smart Cinema</h3>
+                        <p>Developed a movie site where users can enjoy browsing movies in any category by clicking on modals using HTTP request methods such as POST, PUT, and DELETE from a Movies API. Paired project.
+                        </p>
+                        <a href="https://github.com/LozanoRogelio/SmartCinema"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" >See More</a>
+        </div>
+    </div>
+
+<!--    Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> lozano.rogelio92@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> 956-844-7700</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lozanorogelio/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LozanoRogelio"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://alumni.codeup.com/students/1604"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <a href="images/Rogelio_Lozano_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Roger</p>
+        </div>
+    </div>
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links")
+        let tabContents = document.getElementsByClassName("tab-contents")
+
+        function openTab(tabName) {
+            for(tabLink of tabLinks) {
+                tabLink.classList.remove('active-link')
+            }
+            for(tabContent of tabContents) {
+                tabContent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabName).classList.add('active-tab')
+        }
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu")
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwIKGis_WxUWr4zDMtGe3RrPRAu9cCM4APJZvfp8Y_wG3uE5zGqj4zsDFcMUtLLwh2a/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 
 </body>
 </html>
